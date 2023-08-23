@@ -1,0 +1,275 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css");
+.body{
+    margin: 0;
+    font-family: 'Times New Roman', Times, serif;
+}
+.navbar{
+    align-items: center;
+    width:90% auto;
+    padding:20px;
+    background-color: rgb(255, 102, 0);
+    display: flex;
+    justify-content: space-between;
+    
+}
+.name{
+    color: white;
+    text-decoration: none;
+    font-weight:bolder;
+}
+.navbar ul{
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+
+}
+ul li a{
+    color: white;
+    text-decoration: none;
+    justify-content: space-between;
+    text-align: center;
+    float: left;
+    margin-right: 20px;
+    font-size: larger;
+}
+ul li a:hover{
+ color: rgb(10, 167, 31);
+ font-weight: bolder;
+    background-color: rgb(178, 183, 187);
+    border-radius: 8px;
+    box-shadow: 0px 5px 5px 0px red;
+}
+/* -----------------navbar---------------- */
+.profile{
+   width: 75%;
+   height: 350px;
+   margin: 50px auto;
+   padding: 32px; 
+   font-weight: bold;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   border: 2px solid black;
+   background-color: antiquewhite;
+}
+.icon-container{
+  width: 400px;
+  margin: 40px;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 10px;
+}
+.icon{
+    font-size: 30px;
+    border-radius: 50%;
+    /* width: 100px; */
+    padding: 7px 16px;
+    box-shadow: 0px 0px 5px 5px grey;
+    /* background-color: cadetblue; */
+    cursor: pointer;
+}
+.bi-instagram{
+    color: red;
+}
+.bi-linkedin{
+    color:rgb(61, 89, 143);
+}
+.bi-facebook{
+    color:rgb(17, 17, 179);
+}
+.bi-twitter{
+    color: blue;
+}
+.profile-img{
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border: 2px solid black;
+}
+.text-container{
+    width: 600px;
+}
+.text-container h1{
+    margin-top: 0;
+    color: crimson;
+}
+.text-container h3{
+  font-weight: 900px;
+  color: blueviolet;
+}
+/* ----------------------------profile------------------------- */
+.project-section{
+    width:70%;
+    padding: 30px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    border-radius: 10px;
+    border: 2px solid grey;
+   margin: 50px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.project-cards{ 
+     border-radius: 15px;
+    border: 1px solid black;
+    width: 500px;
+    padding:15px;
+   margin:15px;
+} 
+.project-img{
+    width: 400px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.project-img:hover{
+    animation-name:move;
+    animation-duration: 2s;
+}
+@keyframes move{
+    to{
+        transform:rotate(360deg);
+    }
+}
+.btn1{
+    width: 100%;
+    border-radius: 20px;
+    background-color: blue;
+    padding: 12px 15px;
+    color: white;
+    font-size: 20px;
+    font-weight: bolder;
+    border: none;
+    cursor: pointer;
+}
+.btn2{
+    width: 100%;
+    border-radius: 20px;
+    background-color:red;
+    padding: 12px 15px;
+    color: white;
+    font-size: 20px;
+    font-weight: bolder;
+    border: none;
+    cursor: pointer;
+}
+.btn3{
+    width: 100%;
+    border-radius: 20px;
+    background-color: green;
+    padding: 12px 15px;
+    color: white;
+    font-size: 20px;
+    font-weight: bolder;
+    border: none;
+    cursor: pointer;
+}
+.btn4{
+    width: 100%;
+    border-radius: 20px;
+    background-color: coral;
+    padding: 12px 15px;
+    color: white;
+    font-size: 20px;
+    font-weight: bolder;
+    border: none;
+    cursor: pointer;
+}
+.btn1:hover{
+    color: black;
+    background-color: chartreuse;
+    transition: 2s ease-in-out;
+}
+.btn2:hover{
+    color: black;
+    background-color: chartreuse;
+    transition: 2s ease-in-out;
+}
+.btn3:hover{
+    color: black;
+    background-color: chartreuse;
+    transition: 2s ease-in-out;
+}
+.btn4:hover{
+    color: black;
+    background-color: chartreuse;
+    transition: 2s ease-in-out;
+}
+@media only screen and (max-width:576px){
+    body{
+        width:100%;
+        margin: 10px;
+        padding: 0;
+    }
+    .navbar{
+        width: 100%;
+    }
+    .profile{
+        width: 100%;
+        border: none;
+        flex-wrap: wrap-reverse;
+        justify-content: center;
+        margin: 0;
+        padding: 0;
+    }
+    .profile-img{
+        width: 100px;
+        height: 100px;
+        margin-bottom: 30px;
+    }
+    .text-container{
+        width: auto;
+        text-align: center;
+        margin: 0;
+        padding: 0;
+    }
+    .project-section{
+        width: 100%;
+        flex-wrap: wrap-reverse;
+        justify-content: center;
+        margin: 0;
+        padding: 0;
+        border: none;
+    }
+    .project-cards{
+      width: auto;
+      margin: 0;
+      margin-bottom: 20px;
+    }
+    .icon-container{
+        width: auto;
+    }
+    .name{
+        font-size: 18px;
+        color: rgb(11, 1, 24);
+    }
+    h1{
+        font-weight: bolder;
+        font-size: 20px;
+        text-decoration: none;
+    }
+    h2{
+        font-size: 20px;
+    }
+    h3{
+       font-size: 20px;
+       font-weight: bolder;
+    }
+    .con{
+        display: none;
+    }
+    .pro{
+        display: none;
+    }
+    .join{
+        border: 2px solid greenyellow;
+        border-radius: 8px;
+        padding: 12px 15px;
+        background-color: blue;
+    }
+}
+
